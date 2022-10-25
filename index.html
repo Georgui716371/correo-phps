@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Correo</title>
+</head>
+<body>
+    <div class="thm-container">
+    <div class="row">
+    <div class="col-md-8">
+        <div class="contact-form-content">
+            <div class="title">
+
+                <h2 id="Contactanos" class="title" style="color: #ff9900">Contacto</h2>
+            </div>
+            <form action="envioCorreo.php" method="POST" class="contact-form needs-validation" novalidate
+                name="formularioContactanos">
+                <input type="text" name="name" class="form-control" placeholder="Nombres" required>
+                <input type="email" name="email" class="form-control" placeholder="Correo" required>
+                <input type="number" name="numberContactanos" class="form-control" placeholder="Celular"
+                    required>
+                <input type="date" name="dateContactanos" class="form-control" placeholder="Fecha" required>
+                <input type="text" name="direccionContactanos" class="form-control" placeholder="Dirección"
+                    required>
+                <textarea name="message" class="form-control"
+                    placeholder="Dejanos un Mensaje describiendo la situación"></textarea>
+                <button type="submit" class="btn btn-outline-warning" id="buttonEnviarCorreo"
+                    name="bottonEnviar">Enviar</button>
+                <button type="reset" class="btn btn-outline-warning">Limpiar</button>
+                <div class="form-result"></div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+    
+</body>
+</html>
